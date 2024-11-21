@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Bienvenida - David LM</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="marca-nav">DavidLeo</a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="boton-menu"><i class="fas fa-bars"></i></label>
+        <ul class="menu-nav">
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header class="seccion-principal">
+        <h1>Bienvenido a mi Página</h1>
+        <p>Explora para conocer más sobre mí y mis proyectos</p>
+        <div>
+            <a href="sobre-mi.html" class="boton-cta">Sobre mí</a>
+            <a href="proyectos.html" class="boton-cta">Proyectos</a>
+            <a href="contacto.html" class="boton-cta">Contacto</a>
+        </div>
+
+        <section id="noticias" class="seccion-noticias">
+            <h2>Últimas Noticias</h2>
+            <article>
+                <h3>Nuevo Proyecto en Desarrollo</h3>
+                <p>Estoy trabajando en una nueva aplicación web que ayudará a gestionar proyectos de manera más eficiente. ¡Pronto habrá más detalles!</p>
+                <span>20 de Noviembre, 2024</span>
+            </article>
+            <article>
+                <h3>Participación en Conferencia Tecnológica</h3>
+                <p>He sido invitado a hablar en la próxima conferencia de tecnología para compartir mis experiencias y conocimientos sobre desarrollo web.</p>
+                <span>18 de Noviembre, 2024</span>
+            </article>
+        </section>
+    </header>
+
+    <script>
+        document.querySelector('.boton-menu').addEventListener('click', function() {
+            document.querySelector('nav ul.menu-nav').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

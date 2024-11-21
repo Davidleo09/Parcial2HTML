@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - David LM</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <a href="/index.html" class="marca-nav">DavidLeo</a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="boton-menu"><i class="fas fa-bars"></i></label>
+        <ul class="menu-nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="sobre-mi.html">Sobre mí</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="contacto" class="seccion-contenido">
+            <h2>Contacto</h2>
+            <p>Si deseas ponerte en contacto conmigo para discutir ideas, colaborar en proyectos o simplemente hacer preguntas, ¡no dudes en escribirme!</p>
+            <form class="formulario-contacto">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="correo" placeholder="Correo Electrónico" required>
+                <textarea name="mensaje" rows="5" placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="redes-sociales" class="seccion-contenido">
+        <h2>Conéctate Conmigo</h2>
+        <div class="social-iconos">
+            <a href="https://www.linkedin.com/in/david-leonardo-monta%C3%B1o-chinchilla-192347-/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/Davidleo09" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="mailto:montadavidleonardo720@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Gmail</a>
+        </div>
+        <p>&copy; 2024 David Leonardo Montaño Chinchilla. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.querySelector('.boton-menu').addEventListener('click', function() {
+            document.querySelector('nav ul.menu-nav').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

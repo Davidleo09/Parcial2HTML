@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mí - David LM</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <a href="/src/index.html" class="marca-nav">DavidLeo</a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="boton-menu"><i class="fas fa-bars"></i></label>
+        <ul class="menu-nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="sobre-mi" class="seccion-contenido">
+            <h2>Sobre mí</h2>
+            <img src="ruta_a_tu_imagen.jpg" alt="David LM" class="profile-image">
+            <p>Hola, soy David Leonardo Montaño Chinchilla, tengo 17 años y soy estudiante de segundo semestre de Ingeniería en Sistemas en [Nombre de tu Universidad]. Desde una temprana edad, siempre he sentido una fascinación por la tecnología y cómo esta puede transformar la vida de las personas. Mi pasión por la programación y el desarrollo web comenzó cuando descubrí el potencial creativo que ofrece la construcción de sitios web y aplicaciones.</p>
+            <p>Mi objetivo es convertirme en un destacado programador frontend, un campo que me permite combinar mi creatividad con mis habilidades técnicas. Me encanta la idea de diseñar y construir interfaces que no solo sean funcionales, sino también atractivas y fáciles de usar.</p>
+            <p>Actualmente, estoy cursando asignaturas como Cálculo y Desarrollo de Páginas Web, que me han permitido adquirir una sólida base teórica y práctica. He desarrollado competencias en varios lenguajes de programación y herramientas, incluyendo HTML, CSS, JavaScript, React, Bootstrap, Node.js, y MongoDB.</p>
+            <p>Fuera del ámbito académico, me gusta dedicar tiempo a actividades que estimulan mi creatividad y pensamiento crítico. He trabajado en varios proyectos interesantes, como un Sistema de Gestión de Tareas y un Sitio Web de Portafolio Personal.</p>
+        </section>
+
+        <section id="habilidades" class="seccion-contenido">
+            <h2>Habilidades</h2>
+            <ul class="lista">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Bootstrap</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+            </ul>
+        </section>
+
+        <section id="testimonios" class="seccion-contenido">
+            <h2>Testimonios</h2>
+            <blockquote>"David es un desarrollador increíble con una gran atención al detalle. Su trabajo siempre supera nuestras expectativas."</blockquote>
+            <cite>- Jesus Eduardo, Profesor de Ingeniería en Sistemas</cite>
+        </section>
+    </main>
+
+    <script>
+        document.querySelector('.boton-menu').addEventListener('click', function() {
+            document.querySelector('nav ul.menu-nav').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

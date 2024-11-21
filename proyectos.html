@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - David LM</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <a href="/index.html" class="marca-nav">DavidLeo</a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="boton-menu"><i class="fas fa-bars"></i></label>
+        <ul class="menu-nav">
+            <ul><a href="index.html">Inicio</a></ul>
+            <ul><a href="sobre-mi.html">Sobre mí</a></ul>
+            <ul><a href="contacto.html">Contacto</a></ul>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="proyectos" class="seccion-contenido">
+            <h2>Proyectos Destacados</h2>
+
+            <div class="proyecto">
+                <div>
+                    <h3>Proyecto 1: Sistema de Gestión de Tareas</h3>
+                    <p><b>Descripción:</b> Desarrollo de una aplicación web para la gestión de tareas, donde los usuarios pueden crear, editar y eliminar tareas. La aplicación permite la organización de tareas por categorías y el establecimiento de fechas límite.</p>
+                    <p><b>Tecnologías utilizadas:</b> HTML, CSS, JavaScript, Node.js, MongoDB.</p>
+                    <p><b>Resultados obtenidos:</b> Mejora de la productividad y organización personal, con una interfaz intuitiva y fácil de usar.</p>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div>
+                    <h3>Proyecto 2: Sitio Web de Portafolio Personal</h3>
+                    <p><b>Descripción:</b> Creación de un sitio web de portafolio personal para mostrar mis proyectos y habilidades. El sitio incluye una biografía, una galería de proyectos, y una sección de contacto.</p>
+                    <p><b>Tecnologías utilizadas:</b> HTML, CSS, JavaScript, React, Bootstrap.</p>
+                    <p><b>Resultados obtenidos:</b> Una plataforma profesional para presentar mi trabajo y facilitar el contacto con posibles colaboradores y empleadores.</p>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div>
+                    <h3>Proyecto 3: Aplicación de Clima en Tiempo Real</h3>
+                    <div class="proyecto">
+                        <div>
+                            <h3>Proyecto 3: Aplicación de Clima en Tiempo Real</h3>
+                            <p><b>Descripción:</b> Desarrollo de una aplicación web que muestra el clima en tiempo real basado en la ubicación del usuario. La aplicación utiliza una API externa para obtener datos meteorológicos precisos.</p>
+                            <p><b>Tecnologías utilizadas:</b> HTML, CSS, JavaScript, API de OpenWeatherMap.</p>
+                            <p><b>Resultados obtenidos:</b> Proporciona información meteorológica precisa y actualizada, mejorando la planificación diaria de los usuarios.</p>
+                        </div>
+                    </div>
+        
+                </section>
+        
+                <section id="carrusel" class="carrusel-container">
+                    <div class="carrusel-slide">
+                        <img src="imagen1.jpg" alt="Imagen 1">
+                    </div>
+                    <div class="carrusel-slide">
+                        <img src="imagen2.jpg" alt="Imagen 2">
+                    </div>
+                    <div class="carrusel-slide">
+                        <img src="imagen3.jpg" alt="Imagen 3">
+                    </div>
+                </section>
+            </main>
+        
+            <script>
+                document.addEventListener('scroll', function() {
+                    const sections = document.querySelectorAll('.seccion-contenido');
+                    sections.forEach(section => {
+                        const rect = section.getBoundingClientRect();
+                        if (rect.top < window.innerHeight && rect.bottom > 0) {
+                            section.classList.add('visible');
+                        } else {
+                            section.classList.remove('visible');
+                        }
+                    });
+                });
+        
+                let currentSlide = 0;
+                const slides = document.querySelectorAll('.carrusel-slide');
+                setInterval(() => {
+                    slides[currentSlide].style.display = 'none';
+                    currentSlide = (currentSlide + 1) % slides.length;
+                    slides[currentSlide].style.display = 'block';
+                }, 5000);
+            </script>
+        </body>
+        </html>
+        
